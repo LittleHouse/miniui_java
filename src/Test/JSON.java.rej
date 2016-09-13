@@ -1,0 +1,9 @@
+diff a/src/Test/JSON.java b/src/Test/JSON.java	(rejected hunks)
+@@ -26,6 +26,7 @@
+ 		JSONDeserializer deserializer = new JSONDeserializer();
+ 		deserializer.use(String.class, new DateTransformer("yyyy-MM-dd'T'HH:mm:ss"));		
+ 		Object obj = deserializer.deserialize(json);
++		System.out.println(obj.toString());
+ 		if(obj != null && obj.getClass() == String.class){
+ 			return Decode(obj.toString());
+ 		}		
