@@ -1,8 +1,8 @@
 
 
-配置url，开头带#的是菜单
-	/userReportCity/getCityList.action 城市列表
-	#/report/gotoGrabDetailReport.action 约看详情表
+配置url，开头带#的是菜单。所有url加前缀  https://域名/UserOp2/  ，例如：https://域名/UserOp2/userReportCity/getCityList.action
+	userReportCity/getCityList.action 城市列表
+	#report/gotoGrabDetailReport.action 约看详情表
 	notArtificialOrder.action	约看详情表不派单
 	#report/gotoGrabDetailList.action	约看详情表_新_
 	report/grabOrderListExportExcel.action	约看详情表_新_报表导出
@@ -26,11 +26,11 @@
 	report/gotoWeChatArtificialOrderAddWindow.action	微聊派单详情表人工派单添加窗口跳转
 	report/weChatArtificialOrder.action	微聊派单详情表人工手动派单
 	report/notWeChatArtificialOrder.action	微聊派单详情表不派单
-	#/report/gotoChatGrabDetailList.action	V2.0 用户主动微聊派单详情表跳转页
-	/pushOrder/gotoMicroChatPushOrderList.action	V2.0  跳转用户主动微聊派单推送名单页面
+	#report/gotoChatGrabDetailList.action	V2.0 用户主动微聊派单详情表跳转页
+	pushOrder/gotoMicroChatPushOrderList.action	V2.0  跳转用户主动微聊派单推送名单页面
 	excelReport/chatGrabDetailListExport.action	用户主动微聊详情表_新_ 报表导出
-	#/reward/gotoRewardDetailReport.action 悬赏房源列表
-	/report/weChatAutoOrder.action	微聊派单自动派单
+	#reward/gotoRewardDetailReport.action 悬赏房源列表
+	report/weChatAutoOrder.action	微聊派单自动派单
 	#reward/gotoRewardPushOrderDetailReport.action	悬赏派单详情表页面跳转
 	reward/rewardPushOrderDetailReportExportExcel.action	悬赏派单详情表导出
 	pushOrder/gotoRewardPushOrderReport.action	跳转悬赏派单推送名单页面
@@ -42,17 +42,17 @@
 	reward/gotoRewardArtificialOrderAddWindow.action	悬赏派单详情表人工派单添加窗口跳转
 	reward/rewardArtificialOrder.action	悬赏派单详情表人工手动派单
 	reward/notRewardArtificialOrder.action	悬赏派单详情表不派单
-	/reward/rewardDetailReportExportExcel.action 悬赏房源导出
-	#/report/gotoAgentCommentDetailReport.action 经纪人评价详情表
+	reward/rewardDetailReportExportExcel.action 悬赏房源导出
+	#report/gotoAgentCommentDetailReport.action 经纪人评价详情表
 	report/agentCommentDetailReport.action 经纪人评价详情
 	#tipoffHouseReport/tipoffHouseReport.action 房源举报详情表
 	tipoffHouseReport/tipoffHouseReportExportExcel.action 房源举报详情表导出
-	#/configWkzfCusRefuse/gotoWkzfCusRefusePage.action?type=1 黑名单
+	#configWkzfCusRefuse/gotoWkzfCusRefusePage.action?type=1 黑名单
 	configWkzfCusRefuse/queryRefuseList.action 黑名单数据
-	#/configWkzfCusRefuse/gotoWkzfCusRefusePage.action?type=2 白名单
-	/configWkzfCusRefuse/exportRefuseList.action 黑白名单导出
+	#configWkzfCusRefuse/gotoWkzfCusRefusePage.action?type=2 白名单
+	configWkzfCusRefuse/exportRefuseList.action 黑白名单导出
 	# report/gotoAppFeedBackReport.action app意见反馈表
-	/report/appFeedBackExportExcell.action  app意见反馈表导出
+	report/appFeedBackExportExcell.action  app意见反馈表导出
 	estateReport/gotoEstateCommentReport.action	小区评论报表页面跳转
 	#estateReport/estateCommentReport.action	小区评论报表查询
 	estateReport/estateCommentReportExportExcel.action	小区评论报表导出
@@ -67,11 +67,11 @@
 	pushMessageManagemant/gotoPushMessageAddWindow.action	新增push消息
 	pushMessageManagemant/gotoPushMessageEditWindow.action	push消息修改页面
 	pushMessageManagemant/getAllJobNames.action	测试
-	/versionPatch/gotoVersionPatchAddOrEditWindow.action	新增或修改补丁版本
-	#/versionPatch/gotoVersionPatchList.action	补丁版本列表
-	/versionPatch/queryAllByCond.action 热部署查询
-	#/report/gotoAPPInstallReport.action app安装量报表
-	/report/appInstallReport.action app安装量报表数据
+	versionPatch/gotoVersionPatchAddOrEditWindow.action	新增或修改补丁版本
+	#versionPatch/gotoVersionPatchList.action	补丁版本列表
+	versionPatch/queryAllByCond.action 热部署查询
+	#report/gotoAPPInstallReport.action app安装量报表
+	report/appInstallReport.action app安装量报表数据
 	report/appInstallReportExportExcel.action app安装量导出
 	#configContent/findlawyerTeamDataList.action?categoryId=2	律师团队列表查询
 	configContent/gotoLawerTeamAddWindow.action	新增律师窗口跳转
@@ -82,10 +82,10 @@
 	configContent/deleteLawyer.action	删除律师
 	configContent/gotoLawyerTeamPage.action	律师团队配置跳转页
 	#configContent/gotoLawyerTeamPage.action?categoryId=2 法务团队列表查询
-	#/cityOldHouse/gotoCityIndex.action	二手房上线城市
-	/cityOldHouse/getCityList.action	二手房可见城市
-	/cityOldHouse/queryCityStatusList.action	城市上下线状况
-	/cityOldHouse/updateCityState.action	城市上下线操作
+	#cityOldHouse/gotoCityIndex.action	二手房上线城市
+	cityOldHouse/getCityList.action	二手房可见城市
+	cityOldHouse/queryCityStatusList.action	城市上下线状况
+	cityOldHouse/updateCityState.action	城市上下线操作
 	#configSeo/findSeoLinkConfigDataList.action	seo列表查询
 	configSeo/getStatus.action	获取seo的开闭状态
 	configSeo/updateStatus.action	修改seo的开闭状态
@@ -96,43 +96,47 @@
 	configSeo/updateSeo.action	修改seo
 	configSeo/deleteSeo.action	删除seo
 	configSeo/gotoSeoLinkPage.action	seo配置页面跳转
-	#/configSeo/gotoSeoLinkPage.action?categoryId=1  热门二手房
-	#/configSeo/gotoSeoLinkPage.action?categoryId=2  热门楼盘
-	#/configSeo/gotoSeoLinkPage.action?categoryId=3  热门城市
-	#/configSeo/gotoSeoLinkPage.action?categoryId=4  友情链接
-	# /appAdvertis/gotoAppAdvertisPage.action	APP广告管理列表
-	/appAdvertis/gotoAllCityAdvertisPage.action	所有城市的 编辑Banner
-	/appAdvertis/gotoCityAdvertisPage.action	单个城市的  编辑banner
-	/appAdvertis/gotoEditAdvertisPage.action	打开编辑banner页面
-	/appAdvertis/findAdvertis.action	查询banner
+	#configSeo/gotoSeoLinkPage.action?categoryId=1  热门二手房
+	#configSeo/gotoSeoLinkPage.action?categoryId=2  热门楼盘
+	#configSeo/gotoSeoLinkPage.action?categoryId=3  热门城市
+	#configSeo/gotoSeoLinkPage.action?categoryId=4  友情链接
+	# appAdvertis/gotoAppAdvertisPage.action	APP广告管理列表
+	appAdvertis/gotoAllCityAdvertisPage.action	所有城市的 编辑Banner
+	appAdvertis/gotoCityAdvertisPage.action	单个城市的  编辑banner
+	appAdvertis/gotoEditAdvertisPage.action	打开编辑banner页面
+	appAdvertis/findAdvertis.action	查询banner
 	appAdvertis/editAppAdvertis.action	APP启动页加载
-	/appAdvertis/addAppAdvertis.action	app启动页新增
-	#/pcAdvertis/gotoPcAdvertise.action	PC站广告管理列表
-	/pcAdvertis/gotoAllCityAdvertise.action	PC城市类别页
-	/pcAdvertis/gotoAdvertiseList.action	PC广告列表页
-	/pcAdvertis/addAdvertise.action	PC新增广告页
-	/pcAdvertis/getBannerGruopInCity.action	PC城市列表页数据
-	/pcAdvertis/getBannerByCityId.action	PC广告列表页数据
+	appAdvertis/addAppAdvertis.action	app启动页新增
+	#pcAdvertis/gotoPcAdvertise.action	PC站广告管理列表
+	pcAdvertis/gotoAllCityAdvertise.action	PC城市类别页
+	pcAdvertis/gotoAdvertiseList.action	PC广告列表页
+	pcAdvertis/addAdvertise.action	PC新增广告页
+	pcAdvertis/getBannerGruopInCity.action	PC城市列表页数据
+	pcAdvertis/getBannerByCityId.action	PC广告列表页数据
 	#pcAdvertis/gotoH5AdvertisPage.action	H5广告位列表管理页
-	#/H5FirstPageAdvert/gotoH5FirstPageAdvertPage.action H5站首頁广告位管理列表
-	/H5FirstPageAdvert/queryH5FirstPageAdvert.action H5站首頁广告位管理列表数据
+	#H5FirstPageAdvert/gotoH5FirstPageAdvertPage.action H5站首頁广告位管理列表
+	H5FirstPageAdvert/queryH5FirstPageAdvert.action H5站首頁广告位管理列表数据
+	#page/seller/photograph.action	摄影服务功能——列表功能跳转
+	page/seller/gotoPhotographAddWindow.action	摄影服务功能——新增功能跳转
+	page/seller/exportPhotographModelList.action	摄影服务功能——打印功能跳转
+	getPhotographModelList.action 摄影服务——数据列表
 	
 	
-	#/hybirdCate/gotoCateIndex.action 发现频道栏目首页
-	/hybirdCate/getCateList.action 发现频道首页数据
-	/hybirdCate/openAddCatePage.action 打开新增栏目页
-	/hybirdCate/saveCategory.action 保存新增栏目
-	/hybirdCate/gotoAddBannerPage.action 打开新增顶图页面
-	/hybirdCate/saveBanner.action 保存新增顶图
-	/hybirdCate/exchangeCateOrder.action 更新栏目顺序
-	/hybirdCate/openEditCatePage.action 编辑栏目
-	#/hybirdCate/gotoExtraCateIndex.action 特别栏目主页
-	#/hybirdArticle/articleIndex.action 发现频道文章主页
-	/hybirdArticle/getArticleList.action 发现频道文章列表
-	/hybirdArticle/openAddArticlePage.action 打开文章编辑页
-	/hybirdArticle/getArtCategoryList.action 获取栏目列表
-	/hybirdArticle/saveArticle.action 保存文章
-	/kindeditor/uploadFile.action 编辑器上传图片
-	/hybirdShare/gotoAddSharePage.action 打开分享设置
-	/hybirdShare/saveShare.action 保存分享设置
-	/hybirdArticle/editArticle.action 打开文章编辑页
+	#hybirdCate/gotoCateIndex.action 发现频道栏目首页
+	hybirdCate/getCateList.action 发现频道首页数据
+	hybirdCate/openAddCatePage.action 打开新增栏目页
+	hybirdCate/saveCategory.action 保存新增栏目
+	hybirdCate/gotoAddBannerPage.action 打开新增顶图页面
+	hybirdCate/saveBanner.action 保存新增顶图
+	hybirdCate/exchangeCateOrder.action 更新栏目顺序
+	hybirdCate/openEditCatePage.action 编辑栏目
+	#hybirdCate/gotoExtraCateIndex.action 特别栏目主页
+	#hybirdArticle/articleIndex.action 发现频道文章主页
+	hybirdArticle/getArticleList.action 发现频道文章列表
+	hybirdArticle/openAddArticlePage.action 打开文章编辑页
+	hybirdArticle/getArtCategoryList.action 获取栏目列表
+	hybirdArticle/saveArticle.action 保存文章
+	kindeditor/uploadFile.action 编辑器上传图片
+	hybirdShare/gotoAddSharePage.action 打开分享设置
+	hybirdShare/saveShare.action 保存分享设置
+	hybirdArticle/editArticle.action 打开文章编辑页
